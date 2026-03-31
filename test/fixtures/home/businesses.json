@@ -1,0 +1,35 @@
+[
+  {
+    "id": "biz_001",
+    "name": "Zync Gum Factory",
+    "type": "manufacturing",
+    "monthlyRevenue": 85000.0,
+    "employeesCount": 45,
+    "isActive": true,
+    "address": "Toshkent, Chilonzor tumani, Bunyodkor ko'chasi 12",
+    "userId": "user_001",
+    "createdAt": "2024-06-01T00:00:00Z"
+  },
+  {
+    "id": "biz_002",
+    "name": "Zync Retail Store",
+    "type": "retail",
+    "monthlyRevenue": 25000.0,
+    "employeesCount": 8,
+    "isActive": true,
+    "address": "Toshkent, Mirzo Ulug'bek tumani",
+    "userId": "user_001",
+    "createdAt": "2025-01-15T00:00:00Z"
+  },
+  {
+    "id": "biz_003",
+    "name": "Samarqand Distribution",
+    "type": "service",
+    "monthlyRevenue": 15000.0,
+    "employeesCount": 5,
+    "isActive": false,
+    "address": "Samarqand, Registon ko'chasi 45",
+    "userId": "user_001",
+    "createdAt": "2025-08-10T00:00:00Z"
+  }
+]

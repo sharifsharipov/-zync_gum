@@ -1,0 +1,23 @@
+[
+  {
+    "id": "inv-001",
+    "materialName": "Sugar",
+    "quantity": 500.0,
+    "unit": "kg",
+    "minLevel": 100.0
+  },
+  {
+    "id": "inv-002",
+    "materialName": "Gum Base",
+    "quantity": 250.0,
+    "unit": "kg",
+    "minLevel": 50.0
+  },
+  {
+    "id": "inv-003",
+    "materialName": "Mint Extract",
+    "quantity": 30.0,
+    "unit": "liters",
+    "minLevel": 10.0
+  }
+]

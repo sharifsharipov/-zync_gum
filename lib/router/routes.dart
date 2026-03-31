@@ -1,0 +1,20 @@
+import 'package:zync_gum/core/connectivity/network_info.dart';
+import 'package:zync_gum/core/database/local_source.dart';
+import 'package:zync_gum/core/di/injection.dart';
+import 'package:zync_gum/core/enums/user_role.dart';
+import 'package:zync_gum/features/auth/presentation/blocs/auth_bloc/auth_bloc.dart';
+import 'package:zync_gum/features/auth/presentation/pages/auth_page/auth_page.dart';
+import 'package:zync_gum/features/home/presentation/bloc/home_bloc.dart';
+import 'package:zync_gum/features/home/presentation/page/home_page.dart';
+import 'package:zync_gum/features/main/presentation/bloc/main_bloc.dart';
+import 'package:zync_gum/features/main/presentation/pages/main_page.dart';
+import 'package:zync_gum/features/profile/presentation/pages/language_page/language_page.dart';
+import 'package:zync_gum/features/profile/presentation/pages/parofile_page/profile_page.dart';
+import 'package:zync_gum/features/profile/presentation/pages/theme_page/theme_page.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
+import 'package:package_info_plus/package_info_plus.dart';
+
+part 'app_routes.dart';
+part 'name_routes.dart';

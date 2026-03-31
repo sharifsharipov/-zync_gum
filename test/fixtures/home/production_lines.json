@@ -1,0 +1,47 @@
+[
+  {
+    "id": "line_001",
+    "flavor": "Mint Fresh",
+    "status": "running",
+    "progressPercent": 72.5,
+    "temperature": 36.8,
+    "dailyTarget": 1000,
+    "produced": 725
+  },
+  {
+    "id": "line_002",
+    "flavor": "Strawberry Blast",
+    "status": "running",
+    "progressPercent": 45.0,
+    "temperature": 35.2,
+    "dailyTarget": 800,
+    "produced": 360
+  },
+  {
+    "id": "line_003",
+    "flavor": "Watermelon",
+    "status": "idle",
+    "progressPercent": 0.0,
+    "temperature": 22.0,
+    "dailyTarget": 600,
+    "produced": 0
+  },
+  {
+    "id": "line_004",
+    "flavor": "Classic Bubble",
+    "status": "running",
+    "progressPercent": 91.0,
+    "temperature": 37.1,
+    "dailyTarget": 1200,
+    "produced": 1092
+  },
+  {
+    "id": "line_005",
+    "flavor": "Grape Mix",
+    "status": "stopped",
+    "progressPercent": 33.0,
+    "temperature": 24.5,
+    "dailyTarget": 500,
+    "produced": 165
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "pl-001",
+    "flavor": "Mint",
+    "status": "running",
+    "progressPercent": 75.0,
+    "temperature": 36.5,
+    "dailyTarget": 1000,
+    "produced": 750
+  },
+  {
+    "id": "pl-002",
+    "flavor": "Strawberry",
+    "status": "idle",
+    "progressPercent": 0.0,
+    "temperature": 22.0,
+    "dailyTarget": 800,
+    "produced": 0
+  },
+  {
+    "id": "pl-003",
+    "flavor": "Watermelon",
+    "status": "running",
+    "progressPercent": 45.5,
+    "temperature": 34.0,
+    "dailyTarget": 1200,
+    "produced": 546
+  }
+]

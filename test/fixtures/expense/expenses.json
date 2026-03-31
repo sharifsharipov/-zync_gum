@@ -1,0 +1,82 @@
+[
+  {
+    "id": "exp_001",
+    "title": "Sugar purchase - March batch",
+    "amount": 5200.0,
+    "category": "raw_materials",
+    "userId": "user_001",
+    "businessId": "biz_001",
+    "description": "2500 kg sugar from Toshkent Sugar Factory",
+    "createdAt": "2026-03-28T10:00:00Z"
+  },
+  {
+    "id": "exp_002",
+    "title": "Gum Base import",
+    "amount": 12800.0,
+    "category": "raw_materials",
+    "userId": "user_001",
+    "businessId": "biz_001",
+    "description": "500 kg gum base from Turkey supplier",
+    "createdAt": "2026-03-25T14:00:00Z"
+  },
+  {
+    "id": "exp_003",
+    "title": "Line 5 motor replacement",
+    "amount": 3500.0,
+    "category": "equipment_maintenance",
+    "userId": "user_001",
+    "businessId": "biz_001",
+    "description": "Grape Mix line main motor replaced",
+    "createdAt": "2026-03-20T09:00:00Z"
+  },
+  {
+    "id": "exp_004",
+    "title": "March salaries",
+    "amount": 28000.0,
+    "category": "salaries",
+    "userId": "user_001",
+    "businessId": "biz_001",
+    "description": "45 employees monthly salary",
+    "createdAt": "2026-03-01T08:00:00Z"
+  },
+  {
+    "id": "exp_005",
+    "title": "Electricity bill - March",
+    "amount": 4200.0,
+    "category": "utilities",
+    "userId": "user_001",
+    "businessId": "biz_001",
+    "description": "Factory electricity for March",
+    "createdAt": "2026-03-15T12:00:00Z"
+  },
+  {
+    "id": "exp_006",
+    "title": "Packaging materials",
+    "amount": 1800.0,
+    "category": "raw_materials",
+    "userId": "user_001",
+    "businessId": "biz_001",
+    "description": "200 rolls packaging film",
+    "createdAt": "2026-03-22T11:00:00Z"
+  },
+  {
+    "id": "exp_007",
+    "title": "Retail store rent",
+    "amount": 2000.0,
+    "category": "utilities",
+    "userId": "user_001",
+    "businessId": "biz_002",
+    "description": "Monthly rent for Mirzo Ulug'bek store",
+    "createdAt": "2026-03-01T08:00:00Z"
+  },
+  {
+    "id": "exp_008",
+    "title": "Store staff salaries",
+    "amount": 4800.0,
+    "category": "salaries",
+    "userId": "user_001",
+    "businessId": "biz_002",
+    "description": "8 employees monthly salary",
+    "createdAt": "2026-03-01T08:00:00Z"
+  }
+]

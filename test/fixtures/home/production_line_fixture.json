@@ -1,0 +1,9 @@
+{
+  "id": "pl-001",
+  "flavor": "Mint",
+  "status": "running",
+  "progressPercent": 75.0,
+  "temperature": 36.5,
+  "dailyTarget": 1000,
+  "produced": 750
+}

@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "403213553943",
+    "project_id": "zync-gum",
+    "storage_bucket": "zync-gum.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:403213553943:android:f07d8f56d6847c1a5ea752",
+        "android_client_info": {
+          "package_name": "com.example.zync_gum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "403213553943-0e5mjtq68jbl1h6ub45n7lsflvapse2o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zync_gum",
+            "certificate_hash": "693511d67f5ecc56657874acfdb075594082db59"
+          }
+        },
+        {
+          "client_id": "403213553943-obtt1pru31rv0mgsnb4smekc82lrpasu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0529tT851Np1Bx3HAEZ3pSwSJe8MhLuA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "403213553943-obtt1pru31rv0mgsnb4smekc82lrpasu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "403213553943-28lngrjhn526ei47vqm78ddd4fvam47k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.zyncGum"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

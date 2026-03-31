@@ -1,0 +1,50 @@
+[
+  {
+    "id": "user_001",
+    "email": "admin@zyncgum.com",
+    "name": "Azimjon Karimov",
+    "role": "admin",
+    "avatarUrl": "",
+    "phone": "+998901234567",
+    "position": "Director",
+    "department": "Management",
+    "last_login": "2026-03-30T10:00:00Z",
+    "created_at": "2025-01-15T08:00:00Z"
+  },
+  {
+    "id": "user_002",
+    "email": "manager@zyncgum.com",
+    "name": "Dilshod Umarov",
+    "role": "manager",
+    "avatarUrl": "",
+    "phone": "+998937654321",
+    "position": "Production Manager",
+    "department": "Production",
+    "last_login": "2026-03-30T09:30:00Z",
+    "created_at": "2025-03-01T08:00:00Z"
+  },
+  {
+    "id": "user_003",
+    "email": "operator@zyncgum.com",
+    "name": "Sardor Toshmatov",
+    "role": "user",
+    "avatarUrl": "",
+    "phone": "+998951112233",
+    "position": "Line Operator",
+    "department": "Production",
+    "last_login": "2026-03-29T14:00:00Z",
+    "created_at": "2025-06-10T08:00:00Z"
+  },
+  {
+    "id": "user_004",
+    "email": "accountant@zyncgum.com",
+    "name": "Nodira Rahimova",
+    "role": "manager",
+    "avatarUrl": "",
+    "phone": "+998944445566",
+    "position": "Chief Accountant",
+    "department": "Finance",
+    "last_login": "2026-03-30T08:00:00Z",
+    "created_at": "2025-02-20T08:00:00Z"
+  }
+]

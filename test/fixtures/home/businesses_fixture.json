@@ -1,0 +1,22 @@
+[
+  {
+    "id": "biz-001",
+    "name": "Zync Gum Factory",
+    "type": "manufacturing",
+    "monthlyRevenue": 150000.0,
+    "employeesCount": 45,
+    "isActive": true,
+    "address": "Tashkent, Uzbekistan",
+    "userId": "uid123"
+  },
+  {
+    "id": "biz-002",
+    "name": "Zync Distribution",
+    "type": "distribution",
+    "monthlyRevenue": 80000.0,
+    "employeesCount": 12,
+    "isActive": true,
+    "address": "Samarkand, Uzbekistan",
+    "userId": "uid123"
+  }
+]

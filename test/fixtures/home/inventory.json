@@ -1,0 +1,58 @@
+[
+  {
+    "id": "inv_001",
+    "materialName": "Sugar",
+    "quantity": 2500.0,
+    "unit": "kg",
+    "minLevel": 500.0
+  },
+  {
+    "id": "inv_002",
+    "materialName": "Gum Base",
+    "quantity": 180.0,
+    "unit": "kg",
+    "minLevel": 200.0
+  },
+  {
+    "id": "inv_003",
+    "materialName": "Corn Syrup",
+    "quantity": 800.0,
+    "unit": "L",
+    "minLevel": 300.0
+  },
+  {
+    "id": "inv_004",
+    "materialName": "Mint Flavoring",
+    "quantity": 45.0,
+    "unit": "L",
+    "minLevel": 50.0
+  },
+  {
+    "id": "inv_005",
+    "materialName": "Strawberry Flavoring",
+    "quantity": 120.0,
+    "unit": "L",
+    "minLevel": 30.0
+  },
+  {
+    "id": "inv_006",
+    "materialName": "Food Coloring (Red)",
+    "quantity": 15.0,
+    "unit": "kg",
+    "minLevel": 10.0
+  },
+  {
+    "id": "inv_007",
+    "materialName": "Packaging Film",
+    "quantity": 50.0,
+    "unit": "roll",
+    "minLevel": 100.0
+  },
+  {
+    "id": "inv_008",
+    "materialName": "Glycerin",
+    "quantity": 350.0,
+    "unit": "L",
+    "minLevel": 100.0
+  }
+]

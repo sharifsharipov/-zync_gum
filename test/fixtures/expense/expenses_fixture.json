@@ -1,0 +1,29 @@
+[
+  {
+    "id": "exp-001",
+    "title": "Raw Materials",
+    "amount": 25000.0,
+    "category": "materials",
+    "userId": "uid123",
+    "businessId": "biz-001",
+    "description": "Sugar and gum base purchase"
+  },
+  {
+    "id": "exp-002",
+    "title": "Equipment Maintenance",
+    "amount": 5000.0,
+    "category": "maintenance",
+    "userId": "uid123",
+    "businessId": "biz-001",
+    "description": "Monthly maintenance of production lines"
+  },
+  {
+    "id": "exp-003",
+    "title": "Transport",
+    "amount": 3500.0,
+    "category": "logistics",
+    "userId": "uid123",
+    "businessId": "biz-002",
+    "description": "Delivery costs"
+  }
+]
