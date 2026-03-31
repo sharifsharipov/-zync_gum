@@ -88,18 +88,21 @@ void main() {
       expect(find.text('Mint Fresh'), findsOneWidget);
     });
 
-    testWidgets('settings button navigates to settings', (tester) async {
+    testWidgets('profile tab navigates to profile page', (tester) async {
       await tester.pumpWidget(createTestApp());
       await tester.pumpAndSettle(const Duration(seconds: 2));
 
-      // Tap settings icon
-      await tester.tap(find.byIcon(Icons.settings_outlined));
+      await tester.tap(find.byType(BottomNavigationBar));
       await tester.pumpAndSettle();
 
-      // Should see settings page
-      expect(find.text('Settings'), findsOneWidget);
+      final bottomNav = tester.widget<BottomNavigationBar>(
+        find.byType(BottomNavigationBar),
+      );
+      bottomNav.onTap?.call(1);
+      await tester.pumpAndSettle();
+
       expect(find.text('Language'), findsOneWidget);
-      expect(find.text('Theme'), findsOneWidget);
+      expect(find.text('System'), findsOneWidget);
     });
   });
 }

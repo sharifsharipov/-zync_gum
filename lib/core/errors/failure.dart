@@ -16,7 +16,6 @@ abstract class Failure extends Equatable {
   List<Object?> get props => [message, statusCode, type];
 }
 
-// ─── Server (Dio / HTTP) ─────────────────────────────────────────────────────
 class ServerFailure extends Failure {
   const ServerFailure({
     required super.message,
@@ -25,7 +24,6 @@ class ServerFailure extends Failure {
   });
 }
 
-// ─── Firebase Auth ───────────────────────────────────────────────────────────
 class FirebaseAuthFailure extends Failure {
   const FirebaseAuthFailure({
     required super.message,
@@ -56,7 +54,6 @@ class FirebaseAuthFailure extends Failure {
   }
 }
 
-// ─── Firestore / Database ────────────────────────────────────────────────────
 class DatabaseFailure extends Failure {
   const DatabaseFailure({
     required super.message,
@@ -65,7 +62,6 @@ class DatabaseFailure extends Failure {
   });
 }
 
-// ─── Network ─────────────────────────────────────────────────────────────────
 class NetworkFailure extends Failure {
   const NetworkFailure({
     super.message = "Internet aloqasi yo'q",
@@ -73,7 +69,6 @@ class NetworkFailure extends Failure {
   });
 }
 
-// ─── Cache / Local ───────────────────────────────────────────────────────────
 class CacheFailure extends Failure {
   const CacheFailure({
     super.message = 'Mahalliy xato yuz berdi',
@@ -81,7 +76,6 @@ class CacheFailure extends Failure {
   });
 }
 
-// ─── Unknown ─────────────────────────────────────────────────────────────────
 class UnknownFailure extends Failure {
   const UnknownFailure({super.message = "Noma'lum xato"})
       : super(statusCode: 0);

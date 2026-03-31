@@ -3,7 +3,6 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'sign_in_request.freezed.dart';
 part 'sign_in_request.g.dart';
 
-/// Email + parol bilan kirish uchun so'rov modeli
 @freezed
 abstract class SignInEmailRequest with _$SignInEmailRequest {
   const factory SignInEmailRequest({

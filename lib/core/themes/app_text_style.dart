@@ -25,7 +25,6 @@ class AppTextStyle extends ThemeExtension<AppTextStyle> {
   final TextStyle manrope24w400;
   final TextStyle manrope14w500primary;
 
-  ///
   static const _poppins = 'Poppins';
   final TextStyle poppins18w500primary;
   final TextStyle poppins18w600;

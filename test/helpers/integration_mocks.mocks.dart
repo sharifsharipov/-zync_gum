@@ -127,9 +127,6 @@ class _FakeUser_10 extends _i1.SmartFake implements _i7.User {
     : super(parent, parentInvocation);
 }
 
-/// A class which mocks [CheckAuthUsecase].
-///
-/// See the documentation for Mockito's code generation for more information.
 class MockCheckAuthUsecase extends _i1.Mock implements _i8.CheckAuthUsecase {
   MockCheckAuthUsecase() {
     _i1.throwOnMissingStub(this);
@@ -162,10 +159,6 @@ class MockCheckAuthUsecase extends _i1.Mock implements _i8.CheckAuthUsecase {
           )
           as _i9.Future<_i10.Either<_i11.Failure, _i12.UserEntity?>>);
 }
-
-/// A class which mocks [SignOutUsecase].
-///
-/// See the documentation for Mockito's code generation for more information.
 class MockSignOutUsecase extends _i1.Mock implements _i15.SignOutUsecase {
   MockSignOutUsecase() {
     _i1.throwOnMissingStub(this);
@@ -195,10 +188,6 @@ class MockSignOutUsecase extends _i1.Mock implements _i15.SignOutUsecase {
           )
           as _i9.Future<_i10.Either<_i11.Failure, void>>);
 }
-
-/// A class which mocks [SignInEmailUsecase].
-///
-/// See the documentation for Mockito's code generation for more information.
 class MockSignInEmailUsecase extends _i1.Mock
     implements _i16.SignInEmailUsecase {
   MockSignInEmailUsecase() {
@@ -233,9 +222,6 @@ class MockSignInEmailUsecase extends _i1.Mock
           as _i9.Future<_i10.Either<_i11.Failure, _i12.UserEntity>>);
 }
 
-/// A class which mocks [SignUpEmailUsecase].
-///
-/// See the documentation for Mockito's code generation for more information.
 class MockSignUpEmailUsecase extends _i1.Mock
     implements _i17.SignUpEmailUsecase {
   MockSignUpEmailUsecase() {
@@ -270,9 +256,6 @@ class MockSignUpEmailUsecase extends _i1.Mock
           as _i9.Future<_i10.Either<_i11.Failure, _i12.UserEntity>>);
 }
 
-/// A class which mocks [SignInGoogleUsecase].
-///
-/// See the documentation for Mockito's code generation for more information.
 class MockSignInGoogleUsecase extends _i1.Mock
     implements _i18.SignInGoogleUsecase {
   MockSignInGoogleUsecase() {
@@ -307,9 +290,6 @@ class MockSignInGoogleUsecase extends _i1.Mock
           as _i9.Future<_i10.Either<_i11.Failure, _i12.UserEntity>>);
 }
 
-/// A class which mocks [GetProductionLinesUsecase].
-///
-/// See the documentation for Mockito's code generation for more information.
 class MockGetProductionLinesUsecase extends _i1.Mock
     implements _i19.GetProductionLinesUsecase {
   MockGetProductionLinesUsecase() {
@@ -342,9 +322,6 @@ class MockGetProductionLinesUsecase extends _i1.Mock
           >);
 }
 
-/// A class which mocks [GetInventoryUsecase].
-///
-/// See the documentation for Mockito's code generation for more information.
 class MockGetInventoryUsecase extends _i1.Mock
     implements _i21.GetInventoryUsecase {
   MockGetInventoryUsecase() {
@@ -374,9 +351,6 @@ class MockGetInventoryUsecase extends _i1.Mock
           as _i9.Stream<_i10.Either<_i11.Failure, List<_i22.InventoryEntity>>>);
 }
 
-/// A class which mocks [GetBusinessesUsecase].
-///
-/// See the documentation for Mockito's code generation for more information.
 class MockGetBusinessesUsecase extends _i1.Mock
     implements _i23.GetBusinessesUsecase {
   MockGetBusinessesUsecase() {
@@ -407,10 +381,6 @@ class MockGetBusinessesUsecase extends _i1.Mock
           )
           as _i9.Stream<_i10.Either<_i11.Failure, List<_i24.BusinessEntity>>>);
 }
-
-/// A class which mocks [GetUserProfileUsecase].
-///
-/// See the documentation for Mockito's code generation for more information.
 class MockGetUserProfileUsecase extends _i1.Mock
     implements _i25.GetUserProfileUsecase {
   MockGetUserProfileUsecase() {
@@ -445,9 +415,6 @@ class MockGetUserProfileUsecase extends _i1.Mock
           as _i9.Future<_i10.Either<_i11.Failure, _i12.UserEntity>>);
 }
 
-/// A class which mocks [UpdateUserNameUsecase].
-///
-/// See the documentation for Mockito's code generation for more information.
 class MockUpdateUserNameUsecase extends _i1.Mock
     implements _i26.UpdateUserNameUsecase {
   MockUpdateUserNameUsecase() {
@@ -481,9 +448,6 @@ class MockUpdateUserNameUsecase extends _i1.Mock
           as _i9.Future<_i10.Either<_i11.Failure, void>>);
 }
 
-/// A class which mocks [UpdateAvatarUrlUsecase].
-///
-/// See the documentation for Mockito's code generation for more information.
 class MockUpdateAvatarUrlUsecase extends _i1.Mock
     implements _i27.UpdateAvatarUrlUsecase {
   MockUpdateAvatarUrlUsecase() {

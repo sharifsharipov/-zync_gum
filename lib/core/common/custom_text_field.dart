@@ -134,8 +134,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
             prefixStyle: context.textStyle.manrope12w400,
             contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
             counterText: '',
-            
-            // PREFIX
+
             prefixIcon: widget.prefixIcon == null
                 ? null
                 : Padding(
@@ -151,7 +150,6 @@ class _CustomTextFieldState extends State<CustomTextField> {
                     ),
                   ),
 
-            // SUFFIX (Obscure va Suffix)
             suffixIcon: widget.obscure == true
                 ? IconButton(
                     icon: Icon(

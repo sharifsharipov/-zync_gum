@@ -11,7 +11,6 @@ sealed class Themes {
     brightness: Brightness.light,
     colorScheme: AppColor.lightScheme,
 
-    /// AppBar Theme
     appBarTheme: AppBarTheme(
       toolbarHeight: 40,
       elevation: 0,
@@ -29,7 +28,6 @@ sealed class Themes {
       thickness: 1,
     ),
     primaryColor: AppColor.lightScheme.primary,
-    // dialogTheme: const DialogThemeData(backgroundColor: ColorName.white),
     inputDecorationTheme: InputDecorationTheme(
       focusColor: AppColor.lightScheme.primary,
       hoverColor: const Color(0xFFdee1e6),
@@ -79,13 +77,11 @@ sealed class Themes {
       },
     ),
 
-    ///
     progressIndicatorTheme: ProgressIndicatorThemeData(
       color: AppColor.lightScheme.primary,
       circularTrackColor: AppColor.lightScheme.primary.withValues(alpha: 0.2),
     ),
-  
-    ///
+
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       type: BottomNavigationBarType.fixed,
       enableFeedback: true,
@@ -93,7 +89,6 @@ sealed class Themes {
       showSelectedLabels: true,
       showUnselectedLabels: true,
 
-      ///
       selectedItemColor: AppColor.lightScheme.primary,
       unselectedItemColor: const Color(0xFF565d6d),
       selectedLabelStyle: TextStyle(
@@ -111,7 +106,6 @@ sealed class Themes {
       ),
     ),
 
-    ///
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
         shape: WidgetStatePropertyAll(
@@ -150,7 +144,6 @@ sealed class Themes {
         minimumSize: const WidgetStatePropertyAll(Size(36, 36)),
       ),
     ),
-    ///
     chipTheme: ChipThemeData(
       selectedColor: AppColor.lightScheme.primary,
       backgroundColor: AppColor.lightScheme.onPrimary,
@@ -166,7 +159,6 @@ sealed class Themes {
     brightness: Brightness.dark,
     colorScheme: AppColor.darkScheme,
 
-    /// AppBar Theme
     appBarTheme: AppBarTheme(
       elevation: 0,
       toolbarHeight: 40,
@@ -233,13 +225,11 @@ sealed class Themes {
       },
     ),
 
-    ///
     progressIndicatorTheme: ProgressIndicatorThemeData(
       color: AppColor.darkScheme.primary,
       circularTrackColor: AppColor.darkScheme.primary.withValues(alpha: 0.2),
     ),
 
-    ///
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       type: BottomNavigationBarType.fixed,
       enableFeedback: true,
@@ -263,7 +253,6 @@ sealed class Themes {
       ),
     ),
 
-    ///
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
         shape: WidgetStatePropertyAll(
@@ -305,7 +294,6 @@ sealed class Themes {
       ),
     ),
 
-    ///
     chipTheme: ChipThemeData(
       selectedColor: AppColor.darkScheme.primary,
       backgroundColor: AppColor.darkScheme.surfaceContainerHighest,
@@ -315,46 +303,4 @@ sealed class Themes {
       ),
     ),
   );
-
-  // static PinTheme defaultCodeTheme(BuildContext context) => PinTheme(
-  //   height: 4,
-  //   margin: Dimensions.paddingTop36,
-  //   width: Responsive.isMobile(context) ? 48.w : 46,
-  //   textStyle: AppStyle.ttNormsProW500x24White,
-  //   decoration: const BoxDecoration(
-  //     color: Colors.white10,
-  //     borderRadius: Dimensions.radiusTop10,
-  //   ),
-  // );
-
-  // static PinTheme focusedCodeTheme(BuildContext context) => PinTheme(
-  //   height: 4,
-  //   margin: Dimensions.paddingTop36,
-  //   width: Responsive.isMobile(context) ? 48.w : 46,
-  //   textStyle: AppStyle.ttNormsProW500x24White,
-  //   decoration: const BoxDecoration(
-  //     color: ColorName.white,
-  //     borderRadius: Dimensions.radiusTop10,
-  //   ),
-  // );
-  //
-  // static PinTheme submittedCodeTheme(BuildContext context) => PinTheme(
-  //   height: 50,
-  //   width: Responsive.isMobile(context) ? 48.w : 46,
-  //   textStyle: AppStyle.ttNormsProW500x24White,
-  //   decoration: BoxDecoration(
-  //     color: Colors.white10,
-  //     borderRadius: Dimensions.radiusAll8,
-  //   ),
-  // );
-  //
-  // static PinTheme errorCodeTheme(BuildContext context) => PinTheme(
-  //   height: 46,
-  //   width: Responsive.isMobile(context) ? 48.w : 46,
-  //   textStyle: AppStyle.ttNormsProW500x24Red,
-  //   decoration: BoxDecoration(
-  //     color: Colors.red.withOpacity(.2),
-  //     borderRadius: Dimensions.radiusAll10,
-  //   ),
-  // );
 }

@@ -24,39 +24,23 @@ void main() {
         (tester) async {
       await tester.pumpWidget(createTestApp());
       await tester.pumpAndSettle(const Duration(seconds: 2));
-
-      // Should start on home
       expect(find.text('Zync Gum'), findsOneWidget);
-
-      // Tap Profile tab
       await tester.tap(find.text('Profile'));
       await tester.pumpAndSettle();
-
-      // Should show profile page
       expect(find.text('Test User'), findsWidgets);
       expect(find.text('test@zyncgum.com'), findsWidgets);
-
-      // Tap Home tab
       await tester.tap(find.text('Home'));
       await tester.pumpAndSettle();
-
-      // Back to home
       expect(find.text('Mint Fresh'), findsOneWidget);
     });
 
     testWidgets('profile page navigates to settings', (tester) async {
       await tester.pumpWidget(createTestApp());
       await tester.pumpAndSettle(const Duration(seconds: 2));
-
-      // Go to profile
       await tester.tap(find.text('Profile'));
       await tester.pumpAndSettle();
-
-      // Tap settings
       await tester.tap(find.text('Settings'));
       await tester.pumpAndSettle();
-
-      // Should see settings
       expect(find.text('Language'), findsWidgets);
       expect(find.text('Theme'), findsWidgets);
     });
@@ -65,21 +49,14 @@ void main() {
         (tester) async {
       await tester.pumpWidget(createTestApp());
       await tester.pumpAndSettle(const Duration(seconds: 2));
-
-      // Go to profile
       await tester.tap(find.text('Profile'));
       await tester.pumpAndSettle();
-
-      // Tap on user card (edit button)
       await tester.tap(find.byIcon(Icons.edit_outlined));
       await tester.pumpAndSettle();
-
-      // Should see edit profile page
       expect(find.text('Edit Profile'), findsOneWidget);
     });
 
     testWidgets('home error state shows retry button', (tester) async {
-      // Override to return failure
       when(mockGetProductionLines()).thenAnswer(
         (_) => Stream.value(
           const Left(ServerFailure(message: 'Network error', statusCode: 0)),
@@ -88,8 +65,6 @@ void main() {
 
       await tester.pumpWidget(createTestApp());
       await tester.pumpAndSettle(const Duration(seconds: 2));
-
-      // Should show error and retry
       expect(find.text('Retry'), findsOneWidget);
       expect(find.byIcon(Icons.error_outline), findsOneWidget);
     });

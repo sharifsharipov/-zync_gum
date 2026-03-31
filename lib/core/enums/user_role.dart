@@ -13,7 +13,6 @@ enum UserRole {
   bool get isManager => this == UserRole.manager;
   bool get isUser => this == UserRole.user;
 
-  /// admin > manager > user
   bool get canManageUsers => isAdmin;
   bool get canViewReports => isAdmin || isManager;
 }

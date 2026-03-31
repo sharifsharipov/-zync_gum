@@ -36,7 +36,6 @@ Future<String> getFcmToken() async {
 Future<void> initializeNotification() async {
   await setupLocalNotifications();
 
-  /// foreground notification receive
   if (Platform.isAndroid) {
     FirebaseMessaging.onMessage.listen((message) {
       debugPrint('debug_notification: foreground notification received');
@@ -44,7 +43,6 @@ Future<void> initializeNotification() async {
     });
   }
 
-  /// show notification in background/terminated
   FirebaseMessaging.onBackgroundMessage(backgroundHandler);
 }
 
@@ -56,10 +54,9 @@ Future<void> setupLocalNotifications() async {
     await Permission.notification.request();
   }
   _notificationChannel = const AndroidNotificationChannel(
-    'General', // id
-    'General', // title
+    'General',
+    'General',
     description: 'This channel is used for important notifications.',
-    // description
     importance: Importance.high,
   );
 
@@ -80,14 +77,12 @@ Future<void> setupLocalNotifications() async {
 Future<void> showLocalNotification(RemoteMessage message) async {
   final data = message.data;
 
-  /// set image if exists
   final imageUrl = data['image'];
   BigPictureStyleInformation? image;
   String? largeIconPath;
   if (imageUrl != null) {
     List<int>? imageBytes;
 
-    /// get image
     try {
       final request = await HttpClient().getUrl(Uri.parse(imageUrl));
       final response = await request.close();
@@ -98,13 +93,11 @@ Future<void> showLocalNotification(RemoteMessage message) async {
       debugPrint('debug_notification: image load error $e');
     }
     if (imageBytes != null) {
-      /// save image locally to show largeIcon
       final directory = await getApplicationDocumentsDirectory();
       largeIconPath = '${directory.path}/largeIcon';
       final largeIconFile = File(largeIconPath);
       await largeIconFile.writeAsBytes(imageBytes);
 
-      /// set image
       final base64Image = base64Encode(imageBytes);
       image = BigPictureStyleInformation(
         ByteArrayAndroidBitmap.fromBase64String(base64Image),
@@ -145,7 +138,6 @@ Future<void> showLocalNotification(RemoteMessage message) async {
 }
 
 Future<void> handleOnTapNotification() async {
-  /// when message tapped and app is in foreground
   if (Platform.isAndroid) {
     await _notificationPlugin.initialize(
       _initializationSettings,
@@ -154,7 +146,6 @@ Future<void> handleOnTapNotification() async {
     );
   }
 
-  /// when message tapped and app is in background
   FirebaseMessaging.onMessageOpenedApp.listen((message) async {
     debugPrint(
       'debug_notification: background message tapped ${routes.router.state.topRoute?.name} $message',
@@ -163,26 +154,22 @@ Future<void> handleOnTapNotification() async {
     _navigateIfPossible(route);
   });
 
-  /// when message tapped and app is in terminated
   final remoteMessage = await FirebaseMessaging.instance.getInitialMessage();
   final String route = remoteMessage?.data['route'] ?? '';
   debugPrint('debug_notification: initialMessage $remoteMessage');
   _navigateIfPossible(route);
 
-  /// when local notification message tapped and app is in terminated
   final notification = await _notificationPlugin
       .getNotificationAppLaunchDetails();
   if (notification?.didNotificationLaunchApp == true) {
     final data = jsonDecode(notification?.notificationResponse?.payload ?? '');
 
-    /// action route
     if ((notification?.notificationResponse?.actionId ?? '').isNotEmpty) {
       debugPrint('debug_notification: terminated action pressed');
       final String route = data['action_route'] ?? '';
 
       _navigateIfPossible(route);
     }
-    /// notification route
     else {
       debugPrint('debug_notification: terminated notification pressed');
       final String route = data['route'] ?? '';

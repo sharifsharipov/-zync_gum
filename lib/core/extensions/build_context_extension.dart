@@ -30,7 +30,6 @@ extension BuildContextExtension on BuildContext {
 
   double get devicePixelRatio => MediaQuery.devicePixelRatioOf(this);
 
-  /// messages
   void showFailure(String message) {
     final snackBar = SnackBar(
       content: Text(

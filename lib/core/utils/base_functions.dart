@@ -28,10 +28,10 @@ String formatSmartDate(DateTime? date) {
   } else if (difference == -1) {
     dayText = localizationWithoutContext.yesterday;
   } else {
-    dayText = DateFormat('MMMM d').format(date); // e.g., January 5
+    dayText = DateFormat('MMMM d').format(date);
   }
 
-  final timeText = DateFormat('hh:mm a').format(date); // 10:00 AM
+  final timeText = DateFormat('hh:mm a').format(date);
 
   return '$dayText, $timeText';
 }
@@ -51,18 +51,14 @@ String? parseYoutubeVideoId(String url) {
   final Uri? uri = Uri.tryParse(url);
   if (uri == null) return null;
 
-  // youtu.be/VIDEO_ID
   if (uri.host.contains('youtu.be')) {
     return uri.pathSegments.isNotEmpty ? uri.pathSegments.first : null;
   }
 
-  // youtube.com/watch?v=VIDEO_ID
   if (uri.queryParameters.containsKey('v')) {
     return uri.queryParameters['v'];
   }
 
-  // youtube.com/embed/VIDEO_ID
-  // youtube.com/shorts/VIDEO_ID
   final segments = uri.pathSegments;
   if (segments.isNotEmpty) {
     final index = segments.indexWhere(
@@ -75,4 +71,3 @@ String? parseYoutubeVideoId(String url) {
 
   return null;
 }
-

@@ -9,23 +9,6 @@ final class LocalSource {
   LocalSource(this.box);
 
   final Box<dynamic> box;
-/*
-  Future<void> setUser(LoginModel login) => Future.wait([
-    box.put(LocalSourceKeys.hasProfile, true),
-    box.put(LocalSourceKeys.accessToken, login.accessToken ?? ''),
-    box.put(LocalSourceKeys.refreshToken, login.refreshToken ?? ''),
-    box.put(LocalSourceKeys.userId, login.user?.id ?? 0),
-    box.put(LocalSourceKeys.phone, login.user?.phone ?? ''),
-    box.put(LocalSourceKeys.fullName, login.user?.fullName ?? ''),
-    box.put(LocalSourceKeys.profileImage, login.user?.img ?? ''),
-  ]);
-
-  UserModel get user => UserModel(
-    id: box.get(LocalSourceKeys.userId, defaultValue: ''),
-    phone: box.get(LocalSourceKeys.phone, defaultValue: ''),
-    fullName: box.get(LocalSourceKeys.fullName, defaultValue: ''),
-    img: box.get(LocalSourceKeys.profileImage, defaultValue: ''),
-  );*/
 
   bool get isFirstLaunch =>
       box.get(LocalSourceKeys.isFirstLaunch, defaultValue: true);
@@ -63,7 +46,6 @@ final class LocalSource {
     await box.put(LocalSourceKeys.themeMode, mode.name);
   }
 
-  ///
   Future<void> setAccessToken(String accessToken) async {
     await box.put(LocalSourceKeys.accessToken, accessToken);
   }
@@ -74,7 +56,6 @@ final class LocalSource {
   String get accessToken =>
       box.get(LocalSourceKeys.accessToken, defaultValue: '');
 
-  ///
   Future<void> setRefreshToken(String refresh) async {
     await box.put(LocalSourceKeys.refreshToken, refresh);
   }

@@ -11,12 +11,8 @@ class AppOptions extends Equatable {
   final ThemeMode themeMode;
   final AppLanguage language;
 
-  /// Convert AppLanguage to Flutter Locale
   Locale get locale => _languageToLocale(language);
 
-  /// Returns a [SystemUiOverlayStyle] based on the [ThemeMode] setting.
-  /// In other words, if the theme is dark, returns light; if the theme is
-  /// light, returns dark.
   SystemUiOverlayStyle resolvedSystemUiOverlayStyle() {
     Brightness brightness;
     switch (themeMode) {
@@ -42,7 +38,6 @@ class AppOptions extends Equatable {
         language: language ?? this.language,
       );
 
-  /// Get AppOptions from context
   static AppOptions of(BuildContext context) {
     final scope = context
         .dependOnInheritedWidgetOfExactType<_ModelBindingScope>();
@@ -50,7 +45,6 @@ class AppOptions extends Equatable {
     return scope!.modelBindingState.currentModel;
   }
 
-  /// Update AppOptions and persist locale to storage
   static void update(BuildContext context, AppOptions newModel) {
     final scope = context
         .dependOnInheritedWidgetOfExactType<_ModelBindingScope>();
@@ -58,37 +52,32 @@ class AppOptions extends Equatable {
 
     scope!.modelBindingState.updateModel(newModel);
 
-    // Persist language and theme to local storage
     final localeCode = _languageToLocaleCode(newModel.language);
     localSource.setLocale(localeCode);
     localSource.setThemeMode(newModel.themeMode);
   }
 
-  /// Update only language
   static void updateLanguage(BuildContext context, AppLanguage language) {
     final currentOptions = AppOptions.of(context);
     final newOptions = currentOptions.copyWith(language: language);
     update(context, newOptions);
   }
 
-  /// Update only theme mode
   static void updateThemeMode(BuildContext context, ThemeMode themeMode) {
     final currentOptions = AppOptions.of(context);
     final newOptions = currentOptions.copyWith(themeMode: themeMode);
     update(context, newOptions);
   }
 
-  /// Convert language code string to AppLanguage enum
   static AppLanguage languageFromCode(String code) => switch (code) {
     'uz' => AppLanguage.uzbek,
     'ru' => AppLanguage.russian,
     'en' => AppLanguage.english,
     'fr' => AppLanguage.tajik,
 
-    _ => AppLanguage.english, // Default fallback
+    _ => AppLanguage.english,
   };
 
-  /// Convert AppLanguage enum to locale code string
   static String _languageToLocaleCode(AppLanguage language) =>
       switch (language) {
         AppLanguage.uzbek => 'uz',
@@ -97,7 +86,6 @@ class AppOptions extends Equatable {
         AppLanguage.tajik => 'fr',
       };
 
-  /// Convert AppLanguage enum to Locale
   static Locale _languageToLocale(AppLanguage language) =>
       Locale(_languageToLocaleCode(language));
 

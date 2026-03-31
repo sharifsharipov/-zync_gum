@@ -2,8 +2,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:talker/talker.dart';
 
-/// Seeds Firebase with test data for development.
-/// Call from Settings page or main.dart in debug mode.
 class FirebaseSeeder {
   FirebaseSeeder({
     required FirebaseFirestore firestore,
@@ -74,7 +72,6 @@ class FirebaseSeeder {
       },
     ];
 
-    // Seed current auth user if exists
     final currentUser = _auth.currentUser;
     if (currentUser != null) {
       final doc = _firestore.collection('users').doc(currentUser.uid);
@@ -85,7 +82,6 @@ class FirebaseSeeder {
       }
     }
 
-    // Seed sample users with fixed IDs
     final ids = ['user_001', 'user_002', 'user_003', 'user_004'];
     for (var i = 0; i < users.length; i++) {
       await _firestore.collection('users').doc(ids[i]).set(users[i]);

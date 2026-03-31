@@ -14,7 +14,6 @@ sealed class AppUtils {
     parent: BouncingScrollPhysics(),
   );
 
-  /// sliver gap
   static const Widget kSliverGap0 = SliverToBoxAdapter(
     child: SizedBox.shrink(),
   );
@@ -29,7 +28,6 @@ sealed class AppUtils {
     ),
   );
 
-  /// box
   static const SizedBox kGap = SizedBox.shrink();
   static const Gap kGap2 = Gap(2);
   static const Gap kGap4 = Gap(4);
@@ -42,7 +40,6 @@ sealed class AppUtils {
   static const Gap kGap36 = Gap(36);
   static const Gap kGap40 = Gap(40);
 
-  /// divider
   static const Divider kDivider = Divider(height: 1, thickness: 1);
   static const Padding kPad16Divider = Padding(
     padding: EdgeInsets.only(left: 16),
@@ -53,10 +50,8 @@ sealed class AppUtils {
     child: Divider(height: 1, thickness: 1),
   );
 
-  /// spacer
   static const Spacer kSpacer = Spacer();
 
-  /// padding
   static const EdgeInsets kPaddingAll4 = EdgeInsets.all(4);
   static const EdgeInsets kPaddingAll6 = EdgeInsets.all(6);
   static const EdgeInsets kPaddingAll8 = EdgeInsets.all(8);
@@ -112,7 +107,6 @@ sealed class AppUtils {
     bottom: 8,
   );
 
-  /// border radius
   static const Radius kRadius = Radius.zero;
   static const Radius kRadius8 = Radius.circular(8);
   static const Radius kRadius12 = Radius.circular(12);
@@ -186,20 +180,6 @@ sealed class AppUtils {
     borderRadius: BorderRadius.all(Radius.circular(8)),
   );
 
-  // static const kTabBarBoxDecoration = BoxDecoration(
-  //   color: AppColors.bgGrey2,
-  //   borderRadius: kBorderRadius8,
-  // );
-  // static const kTabBarBoxDecorationDark = BoxDecoration(
-  //   color: ThemeColors.backgroundDark,
-  //   borderRadius: kBorderRadius8,
-  // );
-  // static const kTabBoxDecoration = BoxDecoration(
-  //   color: AppColors.white,
-  //   borderRadius: kBorderRadius8,
-  // );
-
-  ///
   static const BoxConstraints kBoxConstraints24 = BoxConstraints.tightFor(
     width: 24,
     height: 24,

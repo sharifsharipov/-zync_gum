@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 extension StringExten on String {
-  // Here it is!
   Size textSize(TextStyle style) {
     final TextPainter textPainter = TextPainter(
       text: TextSpan(text: this, style: style),
